@@ -1,0 +1,115 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+nav img{
+    align-self: center;
+    height: 34px;
+}
+
+#profile-container{
+    height: 75vh;
+}
+
+#profile{
+    height: 100%;
+    margin: 8px;
+    border-radius: 15px;
+    display: flex;
+    position: relative
+}
+
+#info-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin: 10px;
+}
+
+#badge{
+    position: absolute;
+    width: 233.91px;
+    height: 116.26px;
+    left: 14px;
+    top: 51.96px;
+    border: none;
+    transform: rotate(-30deg);
+}
+
+#name, #bio{
+    font-family: 'Poppins';
+    font-style: normal;
+    margin: 0;
+}
+
+#name{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+#bio{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#btn-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 24px;
+}
+
+btn{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    height: 92px;
+    width: 92px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 15px;
+    display: flex;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#like-btn{
+    background-image: url("images/icon-heart.png");
+}
+
+#like-btn:hover, .liked{
+    background-color: #DBFFF4;
+}
+
+#nope-btn{
+    background-image: url("images/icon-cross.png");
+}
+
+#nope-btn:hover, .swiped{
+    background-color: #FFE7EF;
+}

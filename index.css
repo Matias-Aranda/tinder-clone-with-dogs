@@ -14,8 +14,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 500px;
+    margin: 0 auto;
 }
-
 
 nav{
     display: flex;
